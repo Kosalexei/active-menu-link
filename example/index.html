@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .blocks {
+        padding-top: 63px;
+      }
+
+      .block {
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: #ffffff;
+      }
+
+      #first {
+        background-color: #dc3545;
+      }
+
+      #second {
+        background-color: #007bff;
+      }
+
+      #third {
+        background-color: #28a745;
+      }
+
+      .navbar {
+        position: fixed;
+        background-color: #6c757d;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-items {
+        padding: 0;
+        font-size: 1.25rem;
+      }
+
+      .navbar-items li {
+        list-style: none;
+        display: inline-block;
+      }
+
+      .navbar-items li + li {
+        margin-left: 20px;
+      }
+
+      .navbar-items li a {
+        color: #ffffff;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .navbar-items li a::after {
+        width: 0;
+        content: "";
+        height: 4px;
+        background-color: #ffc107;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transition: width .3s ease;
+      }
+
+      .navbar-items li a.active::after {
+        width: 100%;
+      }
+
+      @media (max-width: 991px) {
+        .navbar {
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-items">
+        <li><a href="#first">First</a></li>
+        <li><a href="#second">Second</a></li>
+        <li><a href="#third">Third</a></li>
+      </ul>
+    </nav>
+
+    <div class="blocks">
+      <div class="block" id="first">First</div>
+      <div class="block" id="second">Second</div>
+      <div class="block" id="third">Third</div>
+    </div>
+
+    <script src="../dist/index.js"></script>
+  </body>
+</html>
