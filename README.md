@@ -42,14 +42,14 @@ npm run build #Compiled .js file go to the dist folder.
 ### JavaScript
 
 ```js
-import activeMenuLink from "ActiveMenuLink";
+import ActiveMenuLink from "active-menu-link";
 
 // Not necessary.
 let options = {
   activeClass: "active"
 };
 
-new activeMenuLink(".navbar", options);
+new ActiveMenuLink(".navbar", options);
 ```
 
 ## Options
@@ -90,7 +90,7 @@ new activeMenuLink(".navbar", options);
 ### JavaScript
 
 ```js
-import activeMenuLink from "ActiveMenuLink";
+import ActiveMenuLink from "active-menu-link";
 
 let options = {
   default: "default"
