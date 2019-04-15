@@ -61,7 +61,7 @@ new ActiveMenuLink(".navbar", options);
 | itemTag          | `String`  | *li*       | The selector to which the active class will be applied |
 | activeClass      | `String`  | *active*   | The active class name |
 | scrollOffset     | `Number`  | *0*        | The scroll offset |
-| scrollDuration   | `Number`  | *0*        | The scroll animation duration |
+| scrollDuration   | `Number`  | *500*        | The scroll animation duration |
 | headerHeight     | `Number`  | *null*     | The navbar height. If *null*, height calculate automatic |
 | default          | `String`  | *null*     | If the scroll is not in one of the active sections, the default link will be active |
 | showHash         | `Boolean` | *true*     | Show hash in address bar |
