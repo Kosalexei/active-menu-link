@@ -159,7 +159,7 @@ export default class ActiveMenuLink {
 
         if (scrollTarget !== null) {
           scrollTo(
-            document.documentElement,
+            document.body,
             scrollTarget,
             this.params.scrollDuration
           );
@@ -177,8 +177,3 @@ export default class ActiveMenuLink {
     });
   }
 }
-
-// new ActiveMenuLink(".navbar", {
-//   showHash: true,
-//   scrollDuration: 300
-// });
