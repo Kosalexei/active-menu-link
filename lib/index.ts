@@ -178,7 +178,7 @@ export default class ActiveMenuLink {
   }
 }
 
-new ActiveMenuLink(".navbar", {
-  showHash: true,
-  scrollDuration: 300
-});
+// new ActiveMenuLink(".navbar", {
+//   showHash: true,
+//   scrollDuration: 300
+// });
