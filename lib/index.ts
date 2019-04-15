@@ -140,6 +140,7 @@ export default class ActiveMenuLink {
     links.forEach((link: HTMLElement) => {
       const name = link.getAttribute(this.nameAttribute);
       const target = document.getElementById(name);
+      const parentElement : HTMLElement = document.documentElement.scrollTop !== 0 ? document.documentElement : document.body;
 
       link.addEventListener("click", e => {
         e.preventDefault();
@@ -156,10 +157,10 @@ export default class ActiveMenuLink {
         }
 
         if (name === this.params.default) scrollTarget = 0;
-
+        
         if (scrollTarget !== null) {
           scrollTo(
-            document.body,
+            parentElement,
             scrollTarget,
             this.params.scrollDuration
           );
