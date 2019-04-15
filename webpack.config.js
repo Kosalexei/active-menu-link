@@ -15,7 +15,9 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: 'active-menu-link.js',
+    path: path.resolve(__dirname, 'dist'),
+    library: "ActiveMenuLink",
+    libraryTarget: "umd"
   }
 };
