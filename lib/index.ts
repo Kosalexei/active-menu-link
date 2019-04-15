@@ -84,10 +84,10 @@ export default class ActiveMenuLink {
 
   private setNames(links: NodeList) {
     links.forEach((link: HTMLElement) => {
-      let name = link.getAttribute("href");
+      const href = link.getAttribute("href");
 
-      if (name.indexOf("#") !== 0) return;
-      else name = name.replace("#", "");
+      if (href.indexOf("#") === -1) return;
+      const name = href.split("#")[1]
 
       link.setAttribute(this.nameAttribute, name);
     });

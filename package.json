@@ -2,7 +2,7 @@
   "name": "active-menu-link",
   "version": "1.0.5",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./dist/active-menu-link.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "webpack --mode development --watch",
