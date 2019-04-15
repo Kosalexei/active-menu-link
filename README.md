@@ -96,5 +96,5 @@ let options = {
   default: "default"
 };
 
-new activeMenuLink(".navbar", options);
+new ActiveMenuLink(".navbar", options);
 ```
