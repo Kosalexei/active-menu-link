@@ -1,16 +1,18 @@
-import { getAbsoluteHeight, scrollTo, getMarginTop } from "./utils";
+import { getAbsoluteHeight, getMarginTop } from "./utils";
+import * as scrollTo from "scroll-to";
 
 interface IParameters {
   itemTag: string;
   activeClass: string;
   scrollOffset: number;
   scrollDuration: number;
+  ease: string;
   headerHeight: number;
   default: string;
   showHash: boolean;
 }
 
-export default class ActiveMenuLink {
+class ActiveMenuLink {
   manuSelector: string;
   menu: Element;
   links: NodeList;
@@ -24,6 +26,7 @@ export default class ActiveMenuLink {
     activeClass: "active",
     scrollOffset: 0,
     scrollDuration: 500,
+    ease: "linear",
     headerHeight: null,
     default: null,
     showHash: true
@@ -121,7 +124,7 @@ export default class ActiveMenuLink {
         if (
           targetOffsetTop <= scrollTop + this.params.headerHeight &&
           targetOffsetTop + getAbsoluteHeight(target) >
-            scrollTop + this.params.headerHeight
+          scrollTop + this.params.headerHeight
         ) {
           link.classList.add(this.params.activeClass);
           this.activeIndex = index;
@@ -140,7 +143,7 @@ export default class ActiveMenuLink {
     links.forEach((link: HTMLElement) => {
       const name = link.getAttribute(this.nameAttribute);
       const target = document.getElementById(name);
-      const parentElement : HTMLElement = document.documentElement.scrollTop !== 0 ? document.documentElement : document.body;
+      const parentElement: HTMLElement = document.documentElement.scrollTop !== 0 ? document.documentElement : document.body;
 
       link.addEventListener("click", e => {
         e.preventDefault();
@@ -157,13 +160,12 @@ export default class ActiveMenuLink {
         }
 
         if (name === this.params.default) scrollTarget = 0;
-        
+
         if (scrollTarget !== null) {
-          scrollTo(
-            parentElement,
-            scrollTarget,
-            this.params.scrollDuration
-          );
+          scrollTo(0, scrollTarget, {
+            ease: this.params.ease,
+            duration: this.params.scrollDuration
+          });
         }
 
         if (this.params.showHash) {
@@ -178,3 +180,5 @@ export default class ActiveMenuLink {
     });
   }
 }
+
+export default ActiveMenuLink;
