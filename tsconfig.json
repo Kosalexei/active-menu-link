@@ -1,9 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"] },
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "commonjs",
     "target": "es5",
     "declaration": true
-  }
+  },
+  "include": [
+    "./lib/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
