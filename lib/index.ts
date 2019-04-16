@@ -26,7 +26,7 @@ class ActiveMenuLink {
     activeClass: "active",
     scrollOffset: 0,
     scrollDuration: 500,
-    ease: "linear",
+    ease: "out-circ",
     headerHeight: null,
     default: null,
     showHash: true
