@@ -143,7 +143,6 @@ class ActiveMenuLink {
     links.forEach((link: HTMLElement) => {
       const name = link.getAttribute(this.nameAttribute);
       const target = document.getElementById(name);
-      const parentElement: HTMLElement = document.documentElement.scrollTop !== 0 ? document.documentElement : document.body;
 
       link.addEventListener("click", e => {
         e.preventDefault();
