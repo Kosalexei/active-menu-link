@@ -1,11 +1,13 @@
-[![NPM version](https://img.shields.io/npm/v/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
-[![NPM version](https://img.shields.io/npm/dm/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
-[![NPM version](https://img.shields.io/bundlephobia/min/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
-
 
 # active-menu-link
 
+[![NPM version](https://img.shields.io/npm/v/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
+[![NPM downloads](https://img.shields.io/npm/dm/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
+[![NPM min_size](https://img.shields.io/bundlephobia/min/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
+
 A simple library to highlight the active menu item on a single page.
+
+[DEMO](https://active-menu-link.netlify.com/)
 
 ## Installation
 
@@ -13,15 +15,6 @@ A simple library to highlight the active menu item on a single page.
 
 ```shell
 npm install --save active-menu-link
-```
-
-## Building
-
-```shell
-git clone https://git@github.com/Kosalexei/active-menu-link.git
-cd active-menu-link
-npm install
-npm run build #Compiled .js file go to the dist folder.
 ```
 
 ## Usage
@@ -103,4 +96,13 @@ let options = {
 };
 
 new ActiveMenuLink(".navbar", options);
+```
+
+## Building
+
+```shell
+git clone https://git@github.com/Kosalexei/active-menu-link.git
+cd active-menu-link
+npm install
+npm run build #Compiled .js file go to the dist folder.
 ```
