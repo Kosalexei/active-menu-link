@@ -7,7 +7,8 @@
 
 A simple library to highlight the active menu item on a single page.
 
-[DEMO](https://active-menu-link.netlify.com/)
+## Example
+[Example](https://active-menu-link.netlify.com/)
 
 ## Installation
 
