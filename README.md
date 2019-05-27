@@ -3,7 +3,6 @@
 
 [![NPM version](https://img.shields.io/npm/v/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
 [![NPM downloads](https://img.shields.io/npm/dm/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
-[![NPM min_size](https://img.shields.io/bundlephobia/min/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
 
 A simple library to highlight the active menu item on a single page.
 
@@ -12,10 +11,10 @@ A simple library to highlight the active menu item on a single page.
 
 ## Installation
 
-### NPM
-
 ```shell
-npm install --save active-menu-link
+yarn add active-menu-link
+# OR
+npm install active-menu-link
 ```
 
 ## Usage
