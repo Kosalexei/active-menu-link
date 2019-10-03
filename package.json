@@ -1,7 +1,7 @@
 {
   "name": "active-menu-link",
   "version": "1.1.6",
-  "description": "A simple library to highlight the active menu item on a single page.",
+  "description": "A pure JavaScript smooth scroll & scrollspy library which highlights the active menu item based on the scroll position.",
   "main": "./dist/active-menu-link.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -27,10 +27,10 @@
   },
   "homepage": "https://github.com/Kosalexei/active-menu-link#readme",
   "devDependencies": {
-    "ts-loader": "^5.3.3",
-    "typescript": "^3.2.2",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1"
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {
     "scroll-to": "0.0.2"
