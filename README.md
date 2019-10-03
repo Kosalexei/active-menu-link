@@ -4,7 +4,11 @@
 [![NPM version](https://img.shields.io/npm/v/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
 [![NPM downloads](https://img.shields.io/npm/dm/active-menu-link.svg)](https://www.npmjs.com/package/active-menu-link)
 
-A simple library to highlight the active menu item on a single page.
+## Highlight Active Menu Based On The Scroll Position
+
+A pure JavaScript smooth scroll & scrollspy library which highlights the active menu item based on the scroll position.
+
+A typical use of this library is to create a sticky header navigation for your single page app that allows the user to smoothly scroll through page sections while highlighting the active menu item.
 
 ## Example
 [Example](https://active-menu-link.netlify.com/)
@@ -59,7 +63,7 @@ new ActiveMenuLink(".navbar", options);
 | itemTag          | `String`  | *li*       | Selector to which the active class will be applied |
 | activeClass      | `String`  | *active*   | Active class name |
 | scrollOffset     | `Number`  | *0*        | Scroll offset |
-| scrollDuration   | `Number`  | *500*      | Animation duration |
+| scrollDuration   | `Number`  | *500*      | Scroll duration in milliseconds |
 | ease             | `String`  | *out-circ* | Scroll animation (view [ease](https://github.com/component/ease) for more)   |
 | headerHeight     | `Number`  | *null*     | Navbar height. If *null*, height calculate automatic |
 | default          | `String`  | *null*     | If the scroll is not in one of the active sections, the default link will be active |
