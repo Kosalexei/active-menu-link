@@ -1,6 +1,6 @@
 {
   "name": "active-menu-link",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A pure JavaScript smooth scroll & scrollspy library which highlights the active menu item based on the scroll position.",
   "main": "./dist/active-menu-link.js",
   "types": "dist/index.d.ts",
