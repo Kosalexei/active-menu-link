@@ -1,16 +1,7 @@
+/// <reference path="index.d.ts" />
+
 import { getAbsoluteHeight, getMarginTop } from "./utils";
 import * as scrollTo from "scroll-to";
-
-interface IParameters {
-  itemTag: string;
-  activeClass: string;
-  scrollOffset: number;
-  scrollDuration: number;
-  ease: string;
-  headerHeight: number;
-  default: string;
-  showHash: boolean;
-}
 
 class ActiveMenuLink {
   manuSelector: string;
@@ -21,6 +12,9 @@ class ActiveMenuLink {
   defaultLink: HTMLElement;
   nameAttribute: string = "link-name";
 
+  /**
+   * Default parameters.
+   */
   params: IParameters = {
     itemTag: "li",
     activeClass: "active",
@@ -32,7 +26,7 @@ class ActiveMenuLink {
     showHash: true
   };
 
-  constructor(menuSelector: string, args: object | null = null) {
+  constructor(menuSelector: string, args?: IParameters) {
     if (menuSelector.length < 1) return;
 
     this.manuSelector = menuSelector;
@@ -90,7 +84,7 @@ class ActiveMenuLink {
       const href = link.getAttribute("href");
 
       if (href.indexOf("#") === -1) return;
-      const name = href.split("#")[1]
+      const name = href.split("#")[1];
 
       link.setAttribute(this.nameAttribute, name);
     });
@@ -124,7 +118,7 @@ class ActiveMenuLink {
         if (
           targetOffsetTop <= scrollTop + this.params.headerHeight &&
           targetOffsetTop + getAbsoluteHeight(target) >
-          scrollTop + this.params.headerHeight
+            scrollTop + this.params.headerHeight
         ) {
           link.classList.add(this.params.activeClass);
           this.activeIndex = index;
