@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/Kosalexei/active-menu-link#readme",
   "devDependencies": {
-    "ts-loader": "^5.4.5",
-    "typescript": "^3.6.3",
-    "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9"
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "scroll-to": "0.0.2"
