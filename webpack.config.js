@@ -18,6 +18,9 @@ module.exports = {
     filename: 'active-menu-link.js',
     path: path.resolve(__dirname, 'dist'),
     library: "ActiveMenuLink",
-    libraryTarget: "umd"
+    libraryExport: "default",
+    libraryTarget: "umd",
+    umdNamedDefine: true,
+    globalObject: 'this'
   }
 };
